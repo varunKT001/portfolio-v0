@@ -6,9 +6,7 @@ export default function Hero() {
       <div className='hero-header'>
         <p className='hero-small-heading '>Hi, I'am</p>
         <h1 className='hero-big-heading'>Varun Tiwari,</h1>
-        <h1 className='hero-big-heading secondry-big-heading'>
-          MERN stack web developer
-        </h1>
+        <h1 className='hero-big-heading secondry-big-heading'>I'm a </h1>
         <p className='hero-desc'>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
           accusantium reprehenderit voluptates id dicta omnis veniam tempore
