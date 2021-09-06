@@ -13,9 +13,11 @@ export default function Hero() {
           rerum error neque laudantium recusandae sint.
         </p>
       </div>
-      <button className='hero-btn primary-btn'>
-        <p>Check my projects</p>
-      </button>
+      <a href='#projects'>
+        <button className='hero-btn primary-btn'>
+          <p>Check my projects</p>
+        </button>
+      </a>
     </section>
   );
 }

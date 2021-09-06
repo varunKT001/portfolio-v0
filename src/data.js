@@ -14,6 +14,10 @@ import {
   SiPostgresql,
   SiHeroku,
 } from 'react-icons/si';
+import bloggLogo from './images/blogg.png';
+import tomperChatLogo from './images/tomperchat.png';
+import sudarshanLogo from './images/sudarshan.png';
+import monkStoreLogo from './images/monkstore.png';
 
 const navLinks = [
   {
@@ -21,12 +25,8 @@ const navLinks = [
     url: '#',
   },
   {
-    name: 'about',
-    url: '#',
-  },
-  {
     name: 'projects',
-    url: '#',
+    url: '#projects',
   },
   {
     name: 'contact',
@@ -139,4 +139,43 @@ const languages = [
   },
 ];
 
-export { navLinks, themes, socials, languages };
+const projects = [
+  {
+    name: 'tomper chat',
+    image: tomperChatLogo,
+    github_url: 'https://github.com/varunKT001/tomperchat-frontend',
+    site_url: 'https://tomperchat.netlify.app/',
+    desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
+    stack: ['javascript', 'react', 'css3'],
+    featured: true,
+  },
+  {
+    name: 'tomper blogg',
+    image: bloggLogo,
+    github_url: 'https://github.com/varunKT001/blogg-frontend',
+    site_url: 'https://tomperblogg.netlify.app/',
+    desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
+    stack: ['html5', 'css3', 'javascript', 'nodejs', 'postgres'],
+    featured: true,
+  },
+  {
+    name: 'sudarshan',
+    image: sudarshanLogo,
+    github_url: 'https://github.com/varunKT001/sudarshan',
+    site_url: 'https://sudarshan.netlify.app/',
+    desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
+    stack: ['html5', 'css3', 'javascript'],
+    featured: true,
+  },
+  {
+    name: 'monk store',
+    image: monkStoreLogo,
+    github_url: 'https://github.com/varunKT001/the-monk-store',
+    site_url: 'https://webkriti-the-monk-store.herokuapp.com/',
+    desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
+    stack: ['html5', 'css3', 'javascript', 'nodejs', 'postgres'],
+    featured: true,
+  },
+];
+
+export { navLinks, themes, socials, languages, projects };

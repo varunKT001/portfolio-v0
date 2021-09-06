@@ -41,9 +41,10 @@ export default function Navbar({ mainRef }) {
         </div>
         <div className='nav-links-container' ref={containerRef}>
           <ul className='nav-links flex' ref={navRef}>
-            {navLinks.map((link) => {
+            {navLinks.map((link, index) => {
               return (
                 <li
+                  key={index}
                   className='links-list-item pd-side-medium'
                   onClick={toggleNav}
                 >

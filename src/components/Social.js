@@ -5,9 +5,14 @@ export default function Social() {
   return (
     <aside className='social'>
       <div className='social-container'>
-        {socials.map((social) => {
+        {socials.map((social, index) => {
           return (
-            <a className='social-icon' href={social.url} target='_blank'>
+            <a
+              key={index}
+              className='social-icon'
+              href={social.url}
+              target='_blank'
+            >
               {social.icon}
             </a>
           );

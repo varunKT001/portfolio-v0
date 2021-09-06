@@ -50,9 +50,10 @@ export default function Theme() {
   return (
     <aside className='theme'>
       <div className='theme-container'>
-        {themes.map((theme) => {
+        {themes.map((theme, index) => {
           return (
             <div
+              key={index}
               className='theme-circle'
               style={{ backgroundColor: theme.color }}
               onClick={() => changeTheme(theme.name)}

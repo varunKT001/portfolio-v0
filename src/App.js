@@ -2,10 +2,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Submenu from './components/Submenu';
 import Hero from './components/Hero';
-import Theme from './components/Theme';
 import Social from './components/Social';
 import TechStack from './components/TechStack';
-import { themes } from './data';
+import Projects from './components/Projects';
 
 function App() {
   const mainRef = React.useRef(null);
@@ -16,6 +15,7 @@ function App() {
         <Submenu />
         <Hero />
         <TechStack />
+        <Projects />
       </main>
       <footer>
         <Social />
