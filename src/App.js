@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Submenu from './components/Submenu';
 import Hero from './components/Hero';
 import Theme from './components/Theme';
 import Social from './components/Social';
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar mainRef={mainRef} />
       <main className='container' ref={mainRef}>
+        <Submenu />
         <Hero />
         <TechStack />
       </main>

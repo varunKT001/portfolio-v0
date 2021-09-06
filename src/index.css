@@ -64,7 +64,7 @@ button {
 }
 footer {
   margin: auto;
-  margin-top: calc(5 * var(--spacing-large));
+  margin-top: calc(10 * var(--spacing-large));
 }
 h1,
 h2,
@@ -456,8 +456,16 @@ main.container {
   font-size: var(--font-xx-large);
   transition: var(--transition);
 }
+
+@media only screen and (max-width: 420px) {
+  .techstack-language-icon {
+    margin-left: calc(1.5 * var(--spacing-small));
+    margin-right: calc(1.5 * var(--spacing-small));
+  }
+}
+
 .techstack-language-icon:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 /* SUBMENU STYLING */
@@ -466,10 +474,23 @@ main.container {
   height: auto;
   padding: var(--spacing-small);
 }
+.submenu::before {
+  position: relative;
+  content: '';
+  width: 0;
+  height: 0;
+  top: calc(-1 * var(--spacing-large));
+  left: 45%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--clr-primary-17);
+}
 .submenu-heading {
   margin: 0;
+  margin-bottom: var(--spacing-small);
   padding: 0;
   text-align: center;
+  text-transform: capitalize;
 }
 .submenu-desc {
   margin: 0;
@@ -481,4 +502,7 @@ main.container {
   margin: var(--spacing-smaller);
   background-color: var(--clr-primary-17);
   color: var(--clr-primary-2);
+}
+.hide {
+  display: none;
 }

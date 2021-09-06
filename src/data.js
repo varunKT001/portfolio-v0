@@ -4,6 +4,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
   FaNodeJs,
+  FaGitAlt,
 } from 'react-icons/fa';
 import {
   SiJavascript,
@@ -11,6 +12,7 @@ import {
   SiHtml5,
   SiCss3,
   SiPostgresql,
+  SiHeroku,
 } from 'react-icons/si';
 
 const navLinks = [
@@ -116,6 +118,24 @@ const languages = [
     ),
     color: '#ffffff',
     desc: 'The primary use of Express is to provide server-side logic for web and mobile applications, and as such it is used all over the place.',
+  },
+  {
+    name: 'git',
+    icon: <FaGitAlt />,
+    color: '#f34f29',
+    desc: 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.',
+  },
+  {
+    name: 'github',
+    icon: <FaGithub />,
+    color: '#ffffff',
+    desc: 'Github is a web-based platform used for version control. Git simplifies the process of working with other people and makes it easy to collaborate on projects.',
+  },
+  {
+    name: 'heroku',
+    icon: <SiHeroku />,
+    color: '#6567a5',
+    desc: 'Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps.',
   },
 ];
 
