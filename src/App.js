@@ -6,6 +6,7 @@ import Social from './components/Social';
 import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const mainRef = React.useRef(null);
@@ -21,15 +22,7 @@ function App() {
       </main>
       <footer>
         <Social />
-        <div className='footer-info'>
-          <a
-            href='https://github.com/varunKT001/personal-portfolio'
-            target='_blank'
-            className='fancy-link'
-          >
-            Designed and build with ♥ by Varun Kumar Tiwari
-          </a>
-        </div>
+        <Footer />
       </footer>
     </>
   );

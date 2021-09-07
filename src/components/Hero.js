@@ -8,14 +8,15 @@ export default function Hero() {
         <h1 className='hero-big-heading'>Varun Tiwari,</h1>
         <h1 className='hero-big-heading secondry-big-heading'>I'm a </h1>
         <p className='hero-desc'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-          accusantium reprehenderit voluptates id dicta omnis veniam tempore
-          rerum error neque laudantium recusandae sint.
+          My name is Varun Tiwari, I'm a student at ABV-IIITM, Gwalior.
+          Currently, I am pursuing an Integrated B.Tech and M.Tech in
+          Information Technology. Additionally, I am an experienced Full-Stack
+          Web Developer, I build websites from the ground up.
         </p>
       </div>
       <a href='#projects'>
         <button className='hero-btn primary-btn'>
-          <p>Check my projects</p>
+          <p>Check my projects !</p>
         </button>
       </a>
     </section>

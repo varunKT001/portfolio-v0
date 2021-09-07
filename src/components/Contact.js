@@ -8,19 +8,15 @@ export default function Contact() {
       </div>
       <div className='contact-info'>
         <p className='contact-info-text'>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
-          expedita exercitationem ullam deleniti nulla provident ipsa repellat
-          quam esse ducimus.
+          At present, I am in search of new opportunities. If you have any
+          questions, want to collaborate, or just want to say hello, please feel
+          free to contact me. I will get back to you as soon as possible !
         </p>
-        <form
-          action='mailto:tiwarvarun819.vt33.vt@gmail.com'
-          method='post'
-          encType='text/plain'
-        >
+        <a href='mailto:tiwarivarun819.vt33.vt@gmailcom'>
           <button type='submit' className='primary-btn contact-info-button'>
             contact me
           </button>
-        </form>
+        </a>
       </div>
     </section>
   );

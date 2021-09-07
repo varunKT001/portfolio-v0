@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <section className='projects' id='projects' ref={containerRef}>
       <div className='techstack-header'>
-        <IoIosApps /> My Projects
+        <IoIosApps /> Projects
         <div className='horizontal-line'></div>
       </div>
       <div className='projects-container'>

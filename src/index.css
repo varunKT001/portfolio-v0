@@ -42,7 +42,17 @@
   --font-xxl-large: 72px;
   --transition: all 0.125s linear;
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: var(--clr-primary-15);
+  border-radius: 10px;
+}
 /* GLOBAL STYLES */
 html {
   scroll-behavior: smooth;
@@ -687,9 +697,6 @@ main.container {
   }
 }
 @media only screen and (max-width: 380px) {
-  .project-card {
-    max-height: 100vh;
-  }
   .project-card-img {
     min-width: 12rem;
     max-width: 15rem;
@@ -725,11 +732,18 @@ main.container {
 .contact-info-text {
   width: 60%;
   text-align: center;
+  font-size: var(--font-large);
 }
 .contact-info-button {
   margin-top: var(--spacing-large);
   padding: var(--spacing-medium) var(--spacing-large);
   text-transform: capitalize;
+}
+
+@media only screen and (max-width: 420px) {
+  .contact-info-text {
+    width: 100%;
+  }
 }
 
 /* FOOTER STYLING */
@@ -739,6 +753,12 @@ main.container {
   font-family: var(--font-mono);
   font-size: var(--font-medium);
   text-align: center;
+}
+.footer-info svg {
+  transform: translateY(3px);
+}
+.line-height-175 {
+  line-height: 1.75;
 }
 
 @media only screen and (max-width: 420px) {

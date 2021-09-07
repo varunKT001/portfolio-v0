@@ -60,17 +60,17 @@ const socials = [
   },
   {
     name: 'facebook',
-    url: 'https://github.com/varunKT001/',
+    url: 'https://www.facebook.com/people/Varun-Tiwari/100057310502325/',
     icon: <FaFacebookF />,
   },
   {
     name: 'linkedin',
-    url: 'https://github.com/varunKT001/',
+    url: 'https://linkedin.com/in/varun-tiwari-454591178',
     icon: <FaLinkedinIn />,
   },
   {
     name: 'instagram',
-    url: 'https://github.com/varunKT001/',
+    url: 'https://www.instagram.com/varuntiwari55/',
     icon: <FaInstagram />,
   },
 ];
@@ -110,7 +110,7 @@ const languages = [
     name: 'postgres',
     icon: <SiPostgresql />,
     color: '#0064a5',
-    desc: 'PostgreSQL is an advanced, enterprise class open source relational database that supports both SQL and JSON querying. It is used as the primary data store or data warehouse for many web, mobile, application.',
+    desc: 'PostgreSQL is an advanced, enterprise class open source relational database that supports both SQL and JSON querying. It is used as the primary data store or data warehouse for many web, mobile application.',
   },
   {
     name: 'expressjs',
@@ -120,7 +120,7 @@ const languages = [
       </p>
     ),
     color: '#ffffff',
-    desc: 'The primary use of Express is to provide server-side logic for web and mobile applications, and as such it is used all over the place.',
+    desc: 'ExpressJS is a javascript library. The primary use of Express is to provide server-side logic for web and mobile applications, and as such it is used all over the place.',
   },
   {
     name: 'git',
@@ -166,7 +166,7 @@ const projects = [
     image: tomperChatLogo,
     github_url: 'https://github.com/varunKT001/tomperchat-frontend',
     site_url: 'https://tomperchat.netlify.app/',
-    desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
+    desc: 'Tomper Chat is a web-based chatting application, allowing users to either chat in public rooms or make their own rooms, by providing a unique room ID. Users can also share images with other room members. Nodejs as the backend, with a React frontend, are used to emit chat messages via socketio.',
     stack: [
       'javascript',
       'react',
@@ -183,7 +183,7 @@ const projects = [
     image: bloggLogo,
     github_url: 'https://github.com/varunKT001/blogg-frontend',
     site_url: 'https://tomperblogg.netlify.app/',
-    desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
+    desc: 'Blogg is a markdown based blogging system that lets users insert photos, videos, spreadsheets, presentations, and other content into their blogs to make it more interactive. Backend is composed of Nodejs and PostgreSQL. Additionally, the authentication and email verification of users is handled using JsonWebToken (JWT). ',
     stack: [
       'html5',
       'css3',
@@ -201,7 +201,7 @@ const projects = [
     image: sudarshanLogo,
     github_url: 'https://github.com/varunKT001/sudarshan',
     site_url: 'https://sudarshan.netlify.app/',
-    desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
+    desc: `Sudarshan an online tool allows users to alter the size of images as per their needs. The app also features an image compressor that reduces the image's size according to user preferences.`,
     stack: ['html5', 'css3', 'javascript', 'netlify'],
     featured: true,
   },
@@ -210,7 +210,7 @@ const projects = [
     image: monkStoreLogo,
     github_url: 'https://github.com/varunKT001/the-monk-store',
     site_url: 'https://webkriti-the-monk-store.herokuapp.com/',
-    desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
+    desc: 'Monk Store is a fully featured online store that facilitates the easy purchase of gadgets like smartphones, laptops, and storage devices. Users can purchase electronic goods and even sell them. The backend is powered by Nodejs and PostgreSQL. JsonWebToken(JWT) is used for user authentication and email verification. ',
     stack: ['html5', 'css3', 'javascript', 'nodejs', 'postgres', 'heroku'],
     featured: true,
   },
