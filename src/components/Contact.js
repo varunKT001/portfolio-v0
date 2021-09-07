@@ -14,7 +14,7 @@ export default function Contact() {
         </p>
         <a href='mailto:tiwarivarun819.vt33.vt@gmail.com'>
           <button type='submit' className='primary-btn contact-info-button'>
-            contact me
+            <p>contact me</p>
           </button>
         </a>
       </div>

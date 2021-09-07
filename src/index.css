@@ -733,14 +733,16 @@ main.container {
   justify-content: center;
   align-items: center;
 }
+.contact-info a {
+  margin-top: var(--spacing-large);
+}
 .contact-info-text {
   width: 60%;
   text-align: center;
   font-size: var(--font-large);
 }
 .contact-info-button {
-  margin-top: var(--spacing-large);
-  padding: var(--spacing-medium) var(--spacing-large);
+  padding: var(--spacing-smaller) var(--spacing-large);
   text-transform: capitalize;
 }
 
