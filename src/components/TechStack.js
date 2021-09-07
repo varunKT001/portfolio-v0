@@ -1,7 +1,6 @@
 import React from 'react';
 import { languages } from '../data';
 import { FaStackOverflow } from 'react-icons/fa';
-import { useGlobalContext } from '../context';
 import LanguageIcon from './LanguageIcon';
 
 export default function TechStack() {

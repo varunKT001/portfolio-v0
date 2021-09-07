@@ -12,7 +12,7 @@ export default function Contact() {
           questions, want to collaborate, or just want to say hello, please feel
           free to contact me. I will get back to you as soon as possible !
         </p>
-        <a href='mailto:tiwarivarun819.vt33.vt@gmailcom'>
+        <a href='mailto:tiwarivarun819.vt33.vt@gmail.com'>
           <button type='submit' className='primary-btn contact-info-button'>
             contact me
           </button>

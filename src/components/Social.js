@@ -12,6 +12,7 @@ export default function Social() {
               className='social-icon'
               href={social.url}
               target='_blank'
+              rel='noreferrer'
             >
               {social.icon}
             </a>

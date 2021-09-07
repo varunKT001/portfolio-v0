@@ -755,6 +755,7 @@ main.container {
   text-align: center;
 }
 .footer-info svg {
+  color: #ff0000;
   transform: translateY(3px);
 }
 .line-height-175 {

@@ -7,9 +7,10 @@ export default function Footer() {
       <a
         href='https://github.com/varunKT001/personal-portfolio'
         target='_blank'
+        rel='noreferrer'
         className='fancy-link line-height-175'
       >
-        Designed and build with by <FaHeart /> Varun Kumar Tiwari
+        Designed and build with <FaHeart /> by Varun Kumar Tiwari
       </a>
     </div>
   );
