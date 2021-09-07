@@ -12,7 +12,9 @@ export default function ProjectCard({
   return (
     <div
       className='project-card'
-      style={{ flexDirection: `${reverse ? 'row-reverse' : 'row'}` }}
+      style={{
+        flexDirection: `${reverse ? 'row-reverse' : 'row'}`,
+      }}
     >
       <div
         className='project-card-img'

@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaNodeJs,
   FaGitAlt,
+  FaMarkdown,
 } from 'react-icons/fa';
 import {
   SiJavascript,
@@ -12,7 +13,9 @@ import {
   SiHtml5,
   SiCss3,
   SiPostgresql,
+  SiSocketDotIo,
   SiHeroku,
+  SiNetlify,
 } from 'react-icons/si';
 import bloggLogo from './images/blogg.png';
 import tomperChatLogo from './images/tomperchat.png';
@@ -30,7 +33,7 @@ const navLinks = [
   },
   {
     name: 'contact',
-    url: '#',
+    url: '#contact',
   },
 ];
 
@@ -137,6 +140,24 @@ const languages = [
     color: '#6567a5',
     desc: 'Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps.',
   },
+  {
+    name: 'netlify',
+    icon: <SiNetlify />,
+    color: '#00C7B7',
+    desc: 'Netlify is a San Francisco-based cloud computing company that offers hosting and serverless backend services for web applications and static websites.',
+  },
+  {
+    name: 'socketio',
+    icon: <SiSocketDotIo />,
+    color: '#ffffff',
+    desc: 'Socket.IO is a library that enables real-time, bidirectional and event-based communication between the browser and the server.',
+  },
+  {
+    name: 'markdown',
+    icon: <FaMarkdown />,
+    color: '#ffffff',
+    desc: 'A lightweight markup language for creating formatted text using a plain-text editor.',
+  },
 ];
 
 const projects = [
@@ -146,7 +167,15 @@ const projects = [
     github_url: 'https://github.com/varunKT001/tomperchat-frontend',
     site_url: 'https://tomperchat.netlify.app/',
     desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
-    stack: ['javascript', 'react', 'css3'],
+    stack: [
+      'javascript',
+      'react',
+      'nodejs',
+      'socketio',
+      'css3',
+      'netlify',
+      'heroku',
+    ],
     featured: true,
   },
   {
@@ -155,7 +184,16 @@ const projects = [
     github_url: 'https://github.com/varunKT001/blogg-frontend',
     site_url: 'https://tomperblogg.netlify.app/',
     desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
-    stack: ['html5', 'css3', 'javascript', 'nodejs', 'postgres'],
+    stack: [
+      'html5',
+      'css3',
+      'javascript',
+      'markdown',
+      'nodejs',
+      'postgres',
+      'netlify',
+      'heroku',
+    ],
     featured: true,
   },
   {
@@ -164,7 +202,7 @@ const projects = [
     github_url: 'https://github.com/varunKT001/sudarshan',
     site_url: 'https://sudarshan.netlify.app/',
     desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
-    stack: ['html5', 'css3', 'javascript'],
+    stack: ['html5', 'css3', 'javascript', 'netlify'],
     featured: true,
   },
   {
@@ -173,7 +211,7 @@ const projects = [
     github_url: 'https://github.com/varunKT001/the-monk-store',
     site_url: 'https://webkriti-the-monk-store.herokuapp.com/',
     desc: 'varunLorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum voluptates reiciendis minima ut cupiditate sapiente eius mollitia, quasi error.',
-    stack: ['html5', 'css3', 'javascript', 'nodejs', 'postgres'],
+    stack: ['html5', 'css3', 'javascript', 'nodejs', 'postgres', 'heroku'],
     featured: true,
   },
 ];

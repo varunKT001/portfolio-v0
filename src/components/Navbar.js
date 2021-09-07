@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../logo.png';
 import { navLinks } from '../data';
 import { FaBars } from 'react-icons/fa';
+import { AiFillCloseCircle } from 'react-icons/ai';
 import Theme from './Theme';
 
 export default function Navbar({ mainRef }) {
@@ -36,7 +37,7 @@ export default function Navbar({ mainRef }) {
             className='nav-toggle-btn btn-transparent'
             onClick={toggleNav}
           >
-            <FaBars />
+            {navIsOpen ? <AiFillCloseCircle /> : <FaBars />}
           </button>
         </div>
         <div className='nav-links-container' ref={containerRef}>
