@@ -419,6 +419,10 @@ main.container {
   display: flex;
   margin-top: var(--spacing-large);
 }
+.hero-btn a {
+  margin: 0;
+  padding: 0;
+}
 
 @media only screen and (max-width: 770px) {
   .hero-desc {

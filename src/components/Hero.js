@@ -14,11 +14,11 @@ export default function Hero() {
           Web Developer, I build websites from the ground up.
         </p>
       </div>
-      <a href='#projects'>
-        <button className='hero-btn primary-btn'>
+      <button className='hero-btn primary-btn'>
+        <a href='#projects'>
           <p>Check my projects !</p>
-        </button>
-      </a>
+        </a>
+      </button>
     </section>
   );
 }
