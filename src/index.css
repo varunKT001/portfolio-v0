@@ -80,6 +80,16 @@ footer {
   margin: auto;
   margin-top: calc(3 * var(--spacing-large));
 }
+@media only screen and (max-width: 420px) {
+  footer {
+    margin-top: var(--spacing-large);
+  }
+}
+@media only screen and (max-width: 325px) {
+  footer {
+    margin-top: 0;
+  }
+}
 section {
   margin-bottom: calc(2 * var(--spacing-large));
 }
@@ -366,7 +376,7 @@ main.container {
 
 /* HERO STYLING */
 .hero {
-  min-height: 90vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -427,6 +437,11 @@ main.container {
 @media only screen and (max-width: 770px) {
   .hero-desc {
     width: auto;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .hero {
+    min-height: 100vh;
   }
 }
 
@@ -724,7 +739,7 @@ main.container {
 .contact-header {
   text-transform: capitalize;
   font-family: var(--font-calibre);
-  font-size: clamp(26px, 5vw, var(--font-xx-large));
+  font-size: clamp(25px, 5vw, var(--font-xx-large));
   color: var(--clr-dark-grey);
 }
 .contact-info {
@@ -749,6 +764,23 @@ main.container {
 @media only screen and (max-width: 420px) {
   .contact-info-text {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contact-info-text {
+    font-size: var(--font-medium);
+  }
+}
+@media only screen and (max-width: 325px) {
+  .contact {
+    margin-bottom: var(--spacing-large);
+  }
+  .contact-info a {
+    margin-top: var(--spacing-small);
+  }
+  .contact-info-button {
+    padding: 0 var(--spacing-medium);
+    text-transform: capitalize;
   }
 }
 
