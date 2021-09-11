@@ -7,11 +7,13 @@ import Theme from './Theme';
 
 export default function Navbar({ mainRef }) {
   const [navIsOpen, setNavIsOpen] = React.useState(false);
+  const [lastScrollTop, setLastScrollTop] = React.useState(0);
   const navRef = React.useRef(null);
+  const childRef = React.useRef(null);
   const containerRef = React.useRef(null);
 
   React.useEffect(() => {
-    let navHeight = navRef.current.getBoundingClientRect().height;
+    let navHeight = childRef.current.getBoundingClientRect().height;
     if (navIsOpen) {
       containerRef.current.style.height = `${navHeight + 5}px`;
       mainRef.current.style.filter = `blur(5px)`;
@@ -20,14 +22,33 @@ export default function Navbar({ mainRef }) {
       mainRef.current.style.filter = `blur(0px)`;
     }
   }, [navIsOpen]);
+  React.useEffect(() => {
+    window.addEventListener('scroll', changeNavOnScroll);
+    return () => window.removeEventListener('scroll', changeNavOnScroll);
+  }, [lastScrollTop]);
 
   function toggleNav() {
     setNavIsOpen(!navIsOpen);
   }
+  function changeNavOnScroll() {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    let height = navRef.current.getBoundingClientRect().height;
+    if (scrollTop === 0) {
+      navRef.current.classList.remove('nav-high-brightness');
+    } else {
+      navRef.current.classList.add('nav-high-brightness');
+    }
+    if (scrollTop > lastScrollTop) {
+      navRef.current.style.top = `-${height}px`;
+    } else {
+      navRef.current.style.top = `0`;
+    }
+    setLastScrollTop(scrollTop);
+  }
 
   return (
     <header>
-      <nav className='nav flex-space-between pd-side-large'>
+      <nav className='nav flex-space-between pd-side-large' ref={navRef}>
         <div className='nav-header flex-space-between'>
           <div className='nav-logo'>
             <img src={logo} alt='varun' className='nav-logo-img' />
@@ -41,7 +62,7 @@ export default function Navbar({ mainRef }) {
           </button>
         </div>
         <div className='nav-links-container' ref={containerRef}>
-          <ul className='nav-links flex' ref={navRef}>
+          <ul className='nav-links flex' ref={childRef}>
             {navLinks.map((link, index) => {
               return (
                 <li

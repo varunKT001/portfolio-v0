@@ -40,7 +40,7 @@ This is my portfolio website build with <a href='https://reactjs.org' target='_b
    npm run serve
    ```
 
-2. Create a production using the command :
+2. Create a production build using the command :
 
    ```javascript
    npm run build

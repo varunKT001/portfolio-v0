@@ -50,12 +50,13 @@
 }
 ::-webkit-scrollbar-thumb {
   height: 10px;
-  background-color: var(--clr-primary-15);
+  background-color: var(--clr-primary-10);
   border-radius: 10px;
 }
 /* GLOBAL STYLES */
 html {
   scroll-behavior: smooth;
+  scroll-padding: var(--spacing-medium);
 }
 body {
   margin: 0;
@@ -180,6 +181,10 @@ h4 {
   z-index: 10;
   letter-spacing: 1px;
   background-color: var(--clr-primary-1);
+  transition: top 0.25s linear;
+}
+.nav-high-brightness {
+  box-shadow: 0 0 var(--spacing-large) var(--clr-primary-2);
 }
 .nav-logo {
   width: 40%;
@@ -731,7 +736,7 @@ main.container {
 
 /* CONTACT STYLING */
 .contact {
-  min-height: 55vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -740,7 +745,7 @@ main.container {
   text-transform: capitalize;
   font-family: var(--font-calibre);
   font-size: clamp(25px, 5vw, var(--font-xx-large));
-  color: var(--clr-dark-grey);
+  color: var(--clr-primary-17);
 }
 .contact-info {
   display: flex;
@@ -793,7 +798,7 @@ main.container {
   text-align: center;
 }
 .footer-info svg {
-  color: #ff0000;
+  color: var(--clr-primary-10);
   transform: translateY(3px);
 }
 .line-height-175 {
