@@ -181,7 +181,7 @@ h4 {
   z-index: 10;
   letter-spacing: 1px;
   background-color: var(--clr-primary-1);
-  transition: top 0.25s linear;
+  transition: top 0.125s linear;
 }
 .nav-high-brightness {
   box-shadow: 0 0 var(--spacing-large) var(--clr-primary-2);

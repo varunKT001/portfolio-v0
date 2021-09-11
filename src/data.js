@@ -17,6 +17,9 @@ import {
   SiHeroku,
   SiNetlify,
 } from 'react-icons/si';
+
+import values from 'values.js';
+
 import bloggLogo from './images/blogg.png';
 import tomperChatLogo from './images/tomperchat.png';
 import sudarshanLogo from './images/sudarshan.png';
@@ -41,14 +44,22 @@ const themes = [
   {
     name: 'blue',
     color: '#2a93ec',
+    clrValues: new values('#2a93ec').all(10),
   },
   {
-    name: 'magenta',
-    color: '#ff00ff',
+    name: 'lightgreen',
+    color: '#90EE90',
+    clrValues: new values('#90EE90').all(10),
   },
   {
-    name: 'orange',
-    color: '#ff9f00',
+    name: 'pink',
+    color: '#ff69b4',
+    clrValues: new values('#ff69b4').all(10),
+  },
+  {
+    name: 'silvergrey',
+    color: '#C0C0C0',
+    clrValues: new values('#C0C0C0').all(10),
   },
 ];
 
