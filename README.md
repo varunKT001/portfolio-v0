@@ -13,6 +13,13 @@
 <p align='center'>
 This is my portfolio website build with <a href='https://reactjs.org' target='_blank'>react</a> and hosted with <a href='https://app.netlify.com/' target='_blank'>netlify</a>
 </p>
+
+<p align="center">
+   <a href="https://app.netlify.com/sites/varun-tiwari/deploys" target="_blank">
+      <img src="https://api.netlify.com/api/v1/badges/78d9d6fe-582e-4f85-ad7a-b6450d84b002/deploy-status" alt="netlify status">
+   </a>
+</p>
+
 <p align='center'>
 <img src='./src/displayImg.PNG'>
 </p>
