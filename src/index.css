@@ -560,9 +560,11 @@ main.container {
   margin: var(--spacing-smaller);
   background-color: var(--clr-primary-17);
   color: var(--clr-primary-2);
+  transition: opacity 0.2s linear;
 }
 .hide {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* PROJECTS STYLING */
