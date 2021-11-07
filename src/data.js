@@ -13,7 +13,7 @@ import {
   SiHtml5,
   SiCss3,
   SiPostgresql,
-  SiSocketDotIo,
+  SiSocketdotio,
   SiHeroku,
   SiNetlify,
 } from 'react-icons/si';
@@ -159,7 +159,7 @@ const languages = [
   },
   {
     name: 'socketio',
-    icon: <SiSocketDotIo />,
+    icon: <SiSocketdotio />,
     color: '#ffffff',
     desc: 'Socket.IO is a library that enables real-time, bidirectional and event-based communication between the browser and the server.',
   },
