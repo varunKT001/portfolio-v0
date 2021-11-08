@@ -58,5 +58,5 @@ This is my portfolio website build with <a href='https://reactjs.org' target='_b
 <br>
 
 <p align='center'>
-(If you liked the project, give it star 😃)
+(If you liked the project, give it a star 😃)
 </p>
