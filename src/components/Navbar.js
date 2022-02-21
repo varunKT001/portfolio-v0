@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../logo.png';
+import logo from '../images/logo.png';
 import { navLinks } from '../data';
 import { FaBars } from 'react-icons/fa';
 import { AiFillCloseCircle } from 'react-icons/ai';

@@ -1,5 +1,5 @@
 <p align='center'>
-<img src='./src/logo2.png'  width='25%'>
+<img src='./assets/logo2.png'  width='25%'>
 </p>
 <p align='center'>
 <b>Personal portfolio website</b>
@@ -21,7 +21,7 @@ This is my portfolio website build with <a href='https://reactjs.org' target='_b
 </p>
 
 <p align='center'>
-<img src='./src/displayImg.PNG'>
+<img src='./assets/displayImg.PNG'>
 </p>
 
 #### 🛠 Installation and setup

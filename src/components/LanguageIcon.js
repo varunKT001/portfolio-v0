@@ -4,7 +4,7 @@ import { useGlobalContext } from '../context';
 export default function LanguageIcon({ language, containerRef, cardIcon }) {
   const { openSubmenu, closeSubmenu } = useGlobalContext();
   return (
-    <button
+    <div
       className='techstack-language-icon btn-transparent'
       style={{
         color: language.color,
@@ -20,6 +20,6 @@ export default function LanguageIcon({ language, containerRef, cardIcon }) {
       onMouseLeave={closeSubmenu}
     >
       {language.icon}
-    </button>
+    </div>
   );
 }
