@@ -21,7 +21,7 @@ This is my portfolio website build with <a href='https://reactjs.org' target='_b
 </p>
 
 <p align='center'>
-<img src='./assets/displayImg.PNG'>
+<img src='./assets/displayImg.png'>
 </p>
 
 #### 🛠 Installation and setup
