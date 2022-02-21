@@ -1,27 +1,33 @@
 import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
-import { BsBoxArrowUpRight } from 'react-icons/bs';
+import { BsBoxArrowUpRight, BsFillFolderFill } from 'react-icons/bs';
+import { IoApps } from 'react-icons/io5';
 import { projects } from '../data';
 import Tag from './Tag';
 
+const maxLimit = 3;
+
 const OtherProjectCards = () => {
   const [buttonText, setButtonText] = useState('show all');
+
+  // eslint-disable-next-line
   const [unFeaturedProjects, setUnFeaturedProjects] = useState([
     ...projects.filter((item) => item.featured === false),
   ]);
+
   const [otherProjects, setOtherProjects] = useState([
-    ...projects.filter((item) => item.featured === false).slice(0, 3),
+    ...projects.filter((item) => item.featured === false).slice(0, maxLimit),
   ]);
 
   const handleClick = () => {
-    if (otherProjects.length <= 3) {
+    if (otherProjects.length <= maxLimit) {
       setOtherProjects((prev) => {
         return [...unFeaturedProjects];
       });
       setButtonText('show less');
     } else {
       setOtherProjects((prev) => {
-        return [...unFeaturedProjects.slice(0, 3)];
+        return [...unFeaturedProjects.slice(0, maxLimit)];
       });
       setButtonText('show all');
     }
@@ -30,7 +36,7 @@ const OtherProjectCards = () => {
   return (
     <section className='other-projects'>
       <div className='other-projects-header'>
-        <h1>Other projects</h1>
+        <h1>other projects</h1>
       </div>
       <div className='other-projects-container'>
         {otherProjects.map((item, index) => {
@@ -68,13 +74,14 @@ const OtherProjectCards = () => {
                 </div>
               </div>
               <div className='face face2'>
+                <IoApps />
                 <h2>{item.name}</h2>
               </div>
             </div>
           );
         })}
       </div>
-      {unFeaturedProjects.length > 3 && (
+      {unFeaturedProjects.length > maxLimit && (
         <button
           className='primary-btn other-projects-show-btn'
           onClick={handleClick}

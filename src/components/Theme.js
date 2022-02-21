@@ -3,15 +3,19 @@ import { themes } from '../data';
 
 export default function Theme() {
   const [colorTheme, setColorTheme] = React.useState('blue');
+
   React.useEffect(() => {
     if (localStorage.getItem('theme')) {
       setColorTheme(localStorage.getItem('theme'));
       loadTheme();
     }
+    // eslint-disable-next-line
   }, []);
+
   React.useEffect(() => {
     localStorage.setItem('theme', colorTheme);
     loadTheme();
+    // eslint-disable-next-line
   }, [colorTheme]);
 
   function changeTheme(themeName) {

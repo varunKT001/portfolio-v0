@@ -570,7 +570,7 @@ main.container {
   margin: var(--spacing-smaller);
   background-color: var(--clr-primary-17);
   color: var(--clr-primary-2);
-  transition: transform 50ms linear;
+  transition: transform 100ms linear;
 }
 .hide {
   transform: scale(0);
@@ -813,6 +813,7 @@ main.container {
   margin: 0;
   font-size: var(--font-large);
   text-transform: capitalize;
+  color: var(--clr-primary-17);
 }
 .other-projects-container .face.face2 h2 {
   color: var(--clr-primary-17);
@@ -821,9 +822,14 @@ main.container {
   text-transform: capitalize;
   transition: 0.5s;
 }
+.other-projects-container .face.face2 svg {
+  font-size: var(--font-xxl-large);
+  color: var(--clr-primary-10);
+}
 .other-projects-container .face.face2 {
   padding: var(--spacing-medium);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -837,10 +843,15 @@ main.container {
   border-radius: 15px;
 }
 .other-projects-container .card:hover .face.face2 {
+  flex-direction: row;
   height: 60px;
 }
 .other-projects-container .card:hover .face.face2 h2 {
   font-size: var(--font-medium);
+}
+.other-projects-container .card:hover .face.face2 svg {
+  margin-right: var(--spacing-small);
+  font-size: var(--font-small);
 }
 .tag {
   margin: 5px 5px;

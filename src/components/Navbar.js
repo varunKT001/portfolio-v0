@@ -21,10 +21,13 @@ export default function Navbar({ mainRef }) {
       containerRef.current.style.height = `0px`;
       mainRef.current.style.filter = `blur(0px)`;
     }
+    // eslint-disable-next-line
   }, [navIsOpen]);
+
   React.useEffect(() => {
     window.addEventListener('scroll', changeNavOnScroll);
     return () => window.removeEventListener('scroll', changeNavOnScroll);
+    // eslint-disable-next-line
   }, [lastScrollTop]);
 
   function toggleNav() {
