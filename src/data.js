@@ -61,9 +61,9 @@ const themes = [
     clrValues: new values('#2a93ec').all(10),
   },
   {
-    name: 'lightgreen',
-    color: '#90EE90',
-    clrValues: new values('#90EE90').all(10),
+    name: 'darkpurple',
+    color: '#7952b3',
+    clrValues: new values('#7952b3').all(10),
   },
   {
     name: 'pink',

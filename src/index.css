@@ -419,7 +419,7 @@ main.container {
 }
 @keyframes wordChange {
   0% {
-    content: 'web developer';
+    content: 'Web developer';
   }
   50% {
     color: var(--clr-primary-1);
