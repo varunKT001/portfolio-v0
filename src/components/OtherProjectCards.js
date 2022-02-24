@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
-import { BsBoxArrowUpRight, BsFillFolderFill } from 'react-icons/bs';
+import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { IoApps } from 'react-icons/io5';
 import { projects } from '../data';
 import Tag from './Tag';

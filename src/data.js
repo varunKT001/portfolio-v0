@@ -6,6 +6,7 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaMarkdown,
+  FaFigma,
 } from 'react-icons/fa';
 import {
   SiJavascript,
@@ -23,6 +24,7 @@ import {
   SiChakraui,
   SiJsonwebtokens,
   SiBootstrap,
+  SiAdobeaftereffects,
 } from 'react-icons/si';
 import { BsFillCloudArrowUpFill } from 'react-icons/bs';
 
@@ -230,6 +232,18 @@ const languages = [
     icon: <SiBootstrap />,
     color: '#563d7c',
     desc: 'Bootstrap is an HTML, CSS & JS Library that focuses on simplifying the development of informative web pages',
+  },
+  {
+    name: 'figma',
+    icon: <FaFigma />,
+    color: '#6a0dad',
+    desc: 'Figma is a powerful design tool that helps you to create anything: websites, applications, logos, and much more.',
+  },
+  {
+    name: 'adobe illustrator',
+    icon: <SiAdobeaftereffects />,
+    color: '#964B00',
+    desc: 'Adobe Illustrator is the industry standard design app that lets you capture your creative vision with shapes, color, effects, and typography.',
   },
 ];
 

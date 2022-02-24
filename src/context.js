@@ -10,7 +10,7 @@ export const AppProvider = ({ children }) => {
   function openSubmenu(e, text, containerRef) {
     let { left, bottom, right } = e.target.getBoundingClientRect();
     let subt = containerRef.current.getBoundingClientRect().left;
-    let leftCordinate = `${(left + right) / 2 - subt - 115}px`;
+    let leftCordinate = `${(left + right) / 2 - subt - 105}px`;
     let topCordinate = `${bottom + window.scrollY + 20}px`;
     setIsSubmenuOpen(true);
     setSubmenuText(text);

@@ -501,7 +501,9 @@ main.container {
   flex-wrap: wrap;
 }
 .techstack-language-icon {
-  margin: var(--spacing-small);
+  width: 36px;
+  height: 36px;
+  margin: calc(1.25 * var(--spacing-small));
   padding: 0;
   display: inline-block;
   color: var(--clr-primary-10);
