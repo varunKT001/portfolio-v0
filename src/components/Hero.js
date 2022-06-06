@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Resume from '../assets/VarunTiwari-Resume.pdf';
 
 export default function Hero() {
+  const [download, setDownload] = useState(false);
+
   return (
     <section className='hero'>
       <div className='hero-header'>
@@ -15,9 +17,12 @@ export default function Hero() {
           Web Developer, I build websites from the ground up.
         </p>
       </div>
-      <button className='hero-btn primary-btn'>
-        <a href={Resume} download='resume'>
-          <p>Download Resume</p>
+      <button
+        className='hero-btn primary-btn'
+        onClick={() => setDownload(true)}
+      >
+        <a href={Resume} download='VarunTiwari-Resume'>
+          <p>{download ? 'Thanks For Your Interest !' : 'Download Resume'}</p>
         </a>
       </button>
     </section>
