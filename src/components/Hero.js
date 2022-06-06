@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from '../assets/VarunTiwari-Resume.pdf';
 
 export default function Hero() {
   return (
@@ -15,8 +16,8 @@ export default function Hero() {
         </p>
       </div>
       <button className='hero-btn primary-btn'>
-        <a href='#projects'>
-          <p>Check my projects !</p>
+        <a href={Resume} download='resume'>
+          <p>Download Resume</p>
         </a>
       </button>
     </section>
