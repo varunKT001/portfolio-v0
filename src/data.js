@@ -92,7 +92,7 @@ const socials = [
   },
   {
     name: 'linkedin',
-    url: 'https://linkedin.com/in/varun-tiwari-454591178',
+    url: 'https://linkedin.com/in/varunkt001',
     icon: <FaLinkedinIn />,
   },
   {
@@ -364,7 +364,7 @@ const projects = [
     name: 'tomper chat',
     image: tomperChatLogo,
     github_url: 'https://github.com/varunKT001/tomper-chat',
-    site_url: 'https://tomper-chat.herokuapp.com/',
+    site_url: 'https://tomper-chat.onrender.com/',
     desc: 'TomperChat is a clone of WhatsApp. Its build using MERN stack and uses socket.io for realtime messaging, online statuses, typing indicators, notifications etc.',
     stack: [
       'javascript',
